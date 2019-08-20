@@ -1,9 +1,9 @@
 import React from 'react';
 import UserForm from './UserForm';
 
-const Child = () => {
+const Child = (props) => {
   return (
-  <UserForm />
+  <UserForm {...props}/>
   )
 };
 
