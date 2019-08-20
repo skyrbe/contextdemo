@@ -20,8 +20,8 @@ class App extends Component {
   render() {
     return (
       <UserProvider value={{state: this.state, handleChange: this.handleChange}}>
-        <Child />
-        <ChildNotUsingContextMemoized />
+        <Child /><br/>
+        <ChildNotUsingContextMemoized /><br/>
         <ChildNotUsingContext />
       </UserProvider>
     );
