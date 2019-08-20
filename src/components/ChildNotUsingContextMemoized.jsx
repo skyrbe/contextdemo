@@ -1,5 +1,4 @@
 import React, {memo} from 'react';
-import UserForm from './UserForm';
 
 const ChildNotUsingContextMemoized = () => {
   console.log('Did I render memozied');
