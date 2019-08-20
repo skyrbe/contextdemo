@@ -1,9 +1,9 @@
 import React from 'react';
 
 const ChildNotUsingContext = () => {
-  console.log('Did I render');
+  console.log('Normal Component Rendered');
   return (
-    <span>Hola</span>
+    <span>Hola, I am a simpleton</span>
   )
 };
 

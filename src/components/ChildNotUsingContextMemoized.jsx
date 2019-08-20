@@ -1,7 +1,7 @@
 import React, {memo} from 'react';
 
 const ChildNotUsingContextMemoized = () => {
-  console.log('Did I render memozied');
+  console.log('Memoized Component Rendered');
   return (
     <span>Hola, I am memozied</span>
   )
