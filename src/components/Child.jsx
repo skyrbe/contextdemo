@@ -1,9 +1,15 @@
 import React from 'react';
-import UserForm from './UserForm';
+import UserFormRenderProp from './UserForm';
+import UserFormStateless from './UserFormStateless';
+import UserFormStateful from './UserFormStateful';
 
-const Child = (props) => {
+const Child = () => {
   return (
-  <UserForm {...props}/>
+    <>
+      <UserFormRenderProp /> Render Prop<br />
+      <UserFormStateful /> Stateful<br />
+      <UserFormStateless /> Stateless
+    </>
   )
 };
 

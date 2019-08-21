@@ -10,7 +10,7 @@ class App extends Component {
   state = {
     id: 0,
     name: '',
-    description: ''
+    description: '',
   }
 
   handleChange = (key, value) => {
@@ -18,9 +18,10 @@ class App extends Component {
       [key]: value
     });
   }
+
   render() {
     return (
-      <UserProvider value={{state: this.state, handleChange: this.handleChange}}>
+      <UserProvider value={{ state: this.state, handleChange: this.handleChange }}>
         <Child /><br/>
         <ChildNotUsingContextMemoized /><br/>
         <ChildNotUsingContextPure /><br/>
